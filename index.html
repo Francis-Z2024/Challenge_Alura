@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío de Encriptación</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+
+</head>
+
+
+
+<body>
+    <main class="container">
+        <h1>Encriptador de Textos</h1>
+
+        <label for="inputText">Ingresa el texto (solo en minúsculas):</label><br>
+        <textarea id="inputText" placeholder="Escribe aquí..." oninput="convertirMinusculas()"></textarea><br><br>
+
+        <button onclick="encriptar()">Encriptar</button>
+        <button onclick="desencriptar()">Desencriptar</button><br><br>
+
+        <label for="outputText">Resultado:</label><br>
+        <textarea id="outputText" readonly placeholder="El resultado aparecerá aquí..."></textarea><br><br>
+
+        <button onclick="copiar()">Copiar al portapapeles</button>
+        <img class="presentacion__imagen" src="/assets/Muñeco.png" alt="Imagen de Niño esperando la respuesta">
+    </main>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
